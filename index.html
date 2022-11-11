@@ -4,41 +4,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Image Carousel</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <section aria-label="Newest Photos">
-    <ul>
-      <li class="slide">
-        <img src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-      </li>
-        <li class="slide">
-        <img src="https://images.unsplash.com/photo-1523897056079-5553b57112d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-      </li>
-        <li class="slide">
-        <img src="https://images.unsplash.com/photo-1503965830912-6d7b07921cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
-      </li>
-        <li class="slide">
-        <img src="">
-      </li>
-        <li class="slide">
-        <img src="">
-      </li>
-        <li class="slide">
-        <img src="">
-      </li>
-    </ul>
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev"data-carousel-button="prev"><</button>
+      <button class="carousel-button next"data-carousel-button="next">></button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                <img src="https://images.unsplash.com/photo-1471879832106-c7ab9e0cee23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            </li>
+                <li class="slide">
+                <img src="https://images.unsplash.com/photo-1523897056079-5553b57112d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            </li>
+                <li class="slide">
+                <img src="https://images.unsplash.com/photo-1503965830912-6d7b07921cd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            </li>
+                <li class="slide">
+                <img src="https://images.unsplash.com/photo-1499748926165-1085fc69e9fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            </li>
+                <li class="slide">
+                <img src="https://images.unsplash.com/photo-1485970247670-34cd80f5a996?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+            </li>
+                <li class="slide">
+                <img src="https://images.unsplash.com/photo-1528994618239-4d83bbdb7a0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
+            </li>
+        </ul>
+    </div>
   </section>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 
  <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
 
 </html>
